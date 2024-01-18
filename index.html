@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FORM</title>
+    <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+            }
+            body{
+                background: url(images/images.jpg);
+                background-size: 28%;
+                background-position: -400px opx;
+                
+            }
+            .main{
+            width: 400px;
+            margin: 100px auto 0px auto;
+            }
+            h2{
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+            }
+            div.rejister{
+                background-color: rgba(0, 0,  0, 0.5);
+                width: 100%;
+                font-size: 19px;
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255,  255, 0.3);
+                box-shadow: 2ps 2px 15px rgba(0, 0, 0, 0.3);
+                color: white;
+            }
+            form#rejister{
+                margin: 40px;
+            }
+            label{
+                font-size: 19px;
+                font-family: sans-serif;
+                font-style: italic;
+            }      
+            input#name{
+                width: 300px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                outline: 0px;
+                padding: 7px;
+                background-color: #fff;
+                box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+            }  
+            input#submit{
+                width: 200px;
+                padding: 7px;
+                font-size: 16px;
+                font-family: sans-serif;
+                font-weight: 600;
+                border-radius: 3px;
+                background-color: rgba(250,  100, 0, 0.8);
+                color: #fff;
+                cursor: pointer;
+                border: 1-x solid rgba(255, 255,  255, 0.3);
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+                margin-bottom: 10px;
+            }   
+            lable,span,h2{
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+
+            }
+            input:active{
+                background-color: black;
+
+            }
+ </style>
+</head>
+<body>
+    <div class="main">
+        <div class="rejister">
+            <h2> Reister Here</h2>
+            <form action="" id="rejister" method="post">
+                <label for="">first name:</label>
+                <br>
+                <input type="text" name="fname" id="name"
+                placeholder="enter your first name">
+                <br><br>
+                <label for="">last name:</label>
+                <br>
+                <input type="text" name="iname" id="name"
+                placeholder="enter your last name">
+                <br><br>
+                <label for="">age:</label>
+                <br>
+                <input type="number" id="name" name="age"
+                placeholder="how are old you">
+                <br><br>
+                <label for="">email:</label>
+                <br>
+                <input type="email" id="name" name="email"
+                placeholder="enter your valid email">
+                <br><br>
+                <label for="">gender</label>
+                <br>
+                <input type="radio">male <input type="radio">femail <input type="radio">gay
+                <br><br>
+                <label for="">know language</label>
+                <br>
+                <input type="checkbox">hindi <input type="checkbox">english <input type="checkbox">urdu
+                <br><br>
+                <input type="submit" name="submit" id="submit" value="submit">
+
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
